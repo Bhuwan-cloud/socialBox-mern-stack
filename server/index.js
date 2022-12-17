@@ -14,6 +14,9 @@ import { verifyToken } from './middleware/auth.js';
 import userRoutes from "./routes/users.js"
 import postRoutes from "./routes/posts.js"
 import {createPost} from "./controllers/posts.js"
+import Post from './models/Post.js';
+import {users, posts} from "./data/index.js";
+import User from './models/User.js'
 
 // configurations and middlewares 
 
@@ -66,6 +69,13 @@ mongoose.connect(process.env.MONGO_URL, {
     app.listen(PORT, () => {
         console.log(`MongoDb Connected and Server is running in port : ${PORT}`)
     });
+
+    // inserting local dummy  data saved in data file 
+    //  this data should be added only once 
+    // User.insertMany(users);
+    // Post.insertMany(posts);
+
+
 }).catch((err) => { console.log(err) });
 
 
