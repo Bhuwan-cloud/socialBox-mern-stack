@@ -1,0 +1,38 @@
+Arguments: 
+  /home/bhuwan/.nvm/versions/node/v14.20.0/bin/node /usr/local/bin/yarn add express body-parser bcrypt cors dotenv gridfs-stream multer multer-gridfs-storage helmet morgan jsonwebtoken mongoose
+
+PATH: 
+  /home/bhuwan/.fly/bin:/home/bhuwan/.nvm/versions/node/v14.20.0/bin:/home/bhuwan/.rbenv/plugins/ruby-build/bin:/home/bhuwan/.rbenv/shims:/home/bhuwan/.rbenv/bin:/home/bhuwan/.fly/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  14.20.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:71:26)
+
+npm manifest: 
+  {
+    "name": "server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
